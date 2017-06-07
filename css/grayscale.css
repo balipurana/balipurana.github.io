@@ -129,6 +129,7 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-image: url(../img/rice-paddies-1.jpg)
 }
 .intro .intro-body {
   display: table-cell;
