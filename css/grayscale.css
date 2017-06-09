@@ -8,7 +8,7 @@ body {
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: blue;
+  background-color: rgba(105,200,10,0.6);
 }
 html {
   width: 100%;
@@ -39,25 +39,32 @@ p {
   }
 }
 a {
-  color: #8BC34A;
+  color: rgba(139, 195, 74, 1);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+li {
+  letter-spacing: 2px;
+  font-size: 110%;
+}
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #8BC34A;
+  color: rgba(139, 195, 74, 1);
 }
 .light {
   font-weight: 400;
 }
+.book {
+  font-weight: bold;
+}
 .navbar-custom {
-  margin-bottom: 0;
+  margin-bottom: 1px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  font-family: "American Typewriter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgba(105,200,10,0.6);
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -112,17 +119,17 @@ a:focus {
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
-    padding: 0;
-    background: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 0;
+    background: rgba(105,200,10,0.6);
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0.3);
   }
 }
 
 .main-logo {
-  width: 80%;
-  height: 45%;
-  margin-bottom: 5%;
-  margin-top: 15%;
+  width: 90%;
+  height: 52%;
+  margin-top: 20%;
+  padding: 3%;
 }
 
 .intro {
@@ -137,7 +144,11 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-image: url(../img/rice-paddies-1.jpg)
+  background-image: url(../img/rice-paddies-1.jpg);
+  font-family: "American Typewriter", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 2px;
+  font-size: 40%;
+  font-weight: 5%;
 
 }
 .intro .intro-body {
@@ -161,11 +172,14 @@ a:focus {
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
+  .intro-text {
+    margin-bottom: 12%;
+  }
 
 .btn-circle {
   width: 70px;
   height: 70px;
-  margin-top: 15px;
+  margin-top: 10%;
   padding: 7px 16px;
   border: 2px solid white;
   border-radius: 100% !important;
@@ -203,6 +217,30 @@ a:focus {
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
+  border: 2px;
+  border-color: rgba(255,255,255,0.5);
+  border-style: dotted;
+  color: rgba(255,255,255,1);
+  padding: 1%;
+  font-weight: normal;
+  margin-top: 50%;
+  font-size: 120%;
+}
+
+.book-now:hover {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-style: solid;
+  border-color: rgba(105,200,10,0.5);
 }
 
 @-webkit-keyframes pulse {
@@ -308,6 +346,7 @@ footer {
 }
 footer p {
   margin: 0;
+  font-size: 100%;
 }
 ::-moz-selection {
   text-shadow: none;
